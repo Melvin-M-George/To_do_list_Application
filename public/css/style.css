@@ -1,0 +1,118 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+.todo-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.todo-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.todo-form input:focus {
+    border-color: #4cbf1f;
+    box-shadow: 0 0 5px rgba(81, 224, 164, 0.5);
+}
+
+.todo-form button {
+    padding: 10px 15px;
+    background: #4cbf1f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.todo-form button:hover {
+    background: #4cbf1f;
+}
+
+/* To-Do List Styles */
+.todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.todo-list li {
+    background: #f9f9f9;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+
+.todo-list li:hover {
+    background: #e9ecef;
+}
+
+.task-text {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.task-text:hover {
+    color: #12ae7a;
+}
+
+/* Completed Task Style */
+.completed .task-text {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+/* Delete Button */
+.delete-btn {
+    background: transparent;
+    color: #dc3545;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.3s ease;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.delete-btn:hover {
+    transform: scale(1.2);
+    color: #c82333;
+}

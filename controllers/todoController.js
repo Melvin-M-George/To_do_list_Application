@@ -46,3 +46,11 @@ const toggleComplete = async (req,res) => {
         res.status(500).send("Error toggling todo status");
     }
 }
+
+
+module.exports = {
+    getTodo,
+    addTodo,
+    deleteTodo,
+    toggleComplete,
+}
